@@ -1,0 +1,20 @@
+.coinlist-grid {
+  display: grid;
+  gap: var(--space-lg);
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .coinlist-grid {
+    gap: 1rem; 
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .coinlist-grid {
+    gap: 1rem; 
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

@@ -1,0 +1,19 @@
+.home{
+    background-color: var(--bg);
+}
+
+@media(max-width: 1199px){
+  .home {
+    padding: 0 var(--space-lg);
+  }
+}
+
+@media(min-width: 1079px){
+    .home{
+        margin: 0 auto;
+    }
+
+    .home__main{
+        max-width: 1200px;
+    }
+}

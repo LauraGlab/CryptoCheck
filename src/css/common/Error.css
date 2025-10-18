@@ -1,0 +1,54 @@
+.error-page {
+  align-items: center;
+  background: var(--bg);
+  color: var(--text-main);
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  justify-content: center;
+  padding: var(--space-lg);
+  text-align: center;
+}
+
+.error-page h2 {
+  animation: fadeInDown 0.6s ease-out forwards;
+  color: var(--accent);
+  font-size: var(--fs-3xl);
+  font-weight: var(--fw-bold);
+  padding: var(--space-md) var(--space-xs);
+}
+
+.error-page p {
+  animation: fadeInUp 0.6s ease-out forwards;
+  animation-delay: 0.2s;
+  border: 1px solid var(--gray-500);
+  border-radius: var(--radius-md);
+  font-size: var(--fs-md);
+  line-height: var(--lh-loose);
+  max-width: 600px;
+  opacity: 0;
+  padding: var(--space-xs) var(--space-lg);
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

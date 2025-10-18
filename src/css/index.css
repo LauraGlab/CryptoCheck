@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+:root {
+  --black: #0a0a0f;
+  --white: #ffffff;
+  --bg: #111213;
+  --text-main: #ffffff;
+  --text-muted: #D9D9D9;
+  --purple-100: #8c84f3;
+  --purple-200: #8a49e0;
+  --purple-300: #59318d;
+  --accent: var(--purple-200);
+  --primary: var(--purple-300);
+  --secondary: var(--purple-100);
+  --bg-glass: #272829; 
+  --green: #00ff00a5;
+  --red: #ff1500b7;
+  font-size: 14px;
+  --fs-xs: clamp(0.75rem, 0.7rem + 0.3vw, 0.85rem);
+  --fs-sm: clamp(0.875rem, 0.8rem + 0.4vw, 1rem);
+  --fs-base: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);
+  --fs-md: clamp(1.125rem, 1rem + 0.6vw, 1.25rem);
+  --fs-lg: clamp(1.25rem, 1.1rem + 0.7vw, 1.5rem);
+  --fs-xl: clamp(1.5rem, 1.3rem + 0.8vw, 1.75rem);
+  --fs-2xl: clamp(2rem, 1.8rem + 1vw, 2.25rem);
+  --fs-3xl: clamp(2.5rem, 2rem + 1.2vw, 3rem);
+  --fs-4xl: clamp(3.5rem, 2.6rem + 1.5vw, 4.5rem);
+  --fs-5xl: clamp(4.5rem, 3.6rem + 2vw, 5.4rem);
+  --fw-regular: 400;
+  --fw-medium: 600;
+  --fw-bold: 800;
+  --lh-tight: 1;
+  --lh-base: 1.5;
+  --lh-loose: 1.75;
+  --opacity-1: 0.2;
+  --opacity-2: 0.4;
+  --opacity-3: 0.6;
+  --opacity-4: 0.8;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 5rem;
+  --space-section: clamp(4rem, 8vw, 6rem);
+  --space-main-section: 15vw;
+  --z-header: 100;
+  --z-modal: 200;
+  --z-toast: 300;
+}
+
+* {
+  font-family: "DM Sans", sans-serif, Arial, Helvetica;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-x: hidden;
+  transition: background-color 0.4s ease, color 0.4s ease;
+  width: 100%;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text-main);
+  flex-direction: column;
+  font-size: 16px;
+  display: flex;
+  min-height: 100vh; 
+  overflow-x: hidden; 
+  position: relative;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: 100%;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh; 
+  width: 100%;
+}
+
+h1 {
+  font-size: var(--fs-5xl);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-tight);
+}
+
+h2 {
+  font-size: var(--fs-4xl);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-tight);
+}
+
+h3 {
+  font-size: var(--fs-3xl);
+  line-height: var(--lh-tight);
+}
+
+h4 {
+  font-size: var(--fs-2xl);
+  line-height: var(--lh-tight);
+}
+
+h5 {
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-tight);
+}
+
+h6 {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-tight);
+}
+
+a {
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--white);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.dark {
+  --bg: var(--black);
+  --text-main: var(--white);
+}
+
+.light {
+  --bg: #f3f2f8; 
+  --text-main: #2d2938;
+  --text-muted: #6e6875;
+  --bg-glass: rgba(255, 255, 255, 0.45);
+  --bg-glass-border: rgba(190, 180, 210, 0.25);
+  --glass-shadow: 0 8px 24px rgba(40, 35, 60, 0.06);
+  --green: rgba(63, 153, 63, 0.7);
+  --red: rgba(213, 90, 80, 0.75);
+  color-scheme: light;
+}
+
+.page{
+  margin-top: var(--space-section);
+}
+
+.section{
+  margin-top: 60px;
+  width: auto;
+}
+
+.glass{
+  background: var(--bg-glass);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: var(--radius-lg, 20px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.accent{
+  color: var(--accent);
+}
+
+.title{
+  font-size: var(--fs-3xl);
+  margin: var(--space-md) 0;
+}
+
+.subtitle{
+  color: var(--text-muted);
+  margin-bottom: var(--space-lg);
+}
+
+.link:hover{
+  text-decoration: underline;
+}
+
+/*modals*/
+.bckgr {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(10px);
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  padding: var(--space-md);
+  position: fixed;
+  z-index: 2050;
+}
+
+@media(min-width: 768px){
+  :root {
+    --space-main-section: 8vw;
+  }
+
+  .title{
+    font-size: var(--fs-4xl);
+  }
+}
+
+@media(min-width: 1024px){
+  body{
+    font-size: 1.2vw;
+  }
+
+  .section{
+    margin-top: 160px;
+  }
+}
+
+@media(min-width: 1200px){
+  :root {
+    --space-main-section: 70px;
+  }
+}

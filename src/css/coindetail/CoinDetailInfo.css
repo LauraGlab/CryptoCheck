@@ -1,0 +1,46 @@
+.coin-detail-info {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--fs-sm);
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.coin-detail-info__line {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+.coin-detail-info__label {
+  opacity: 0.8;
+}
+
+.coin-detail-info__value {
+  font-weight: var(--fw-medium);
+  text-align: right;
+}
+
+.coin-detail-info__all-time {
+  gap: 0.25rem;
+  text-align: right;
+}
+
+.coin-detail-info__price {
+  font-weight: var(--fw-bold);
+  text-align: right;
+}
+
+.coin-detail-info__percentage--green {
+  color: var(--green);
+}
+
+.coin-detail-info__percentage--red {
+  color: var(--red);
+}
+
+.coin-detail-info__date {
+  font-size: var(--fs-xs);
+  opacity: 0.7;
+}

@@ -1,0 +1,29 @@
+.about{
+    margin-bottom: calc(var(--space-2xl) + 50px);
+}
+
+.about__header{
+    width: 100%;
+}
+
+.about__subtitle{
+    margin-bottom: var(--space-xl);
+}
+
+@media(min-width: 768px){
+    .about__header{
+        width: 70%;
+    }
+}
+
+@media (min-width: 1280px) and (orientation: landscape) {
+    .about__header{
+        width: 50%;
+    }
+
+    .about__card-wrapper{
+        display: grid;
+        gap: 1rem; 
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

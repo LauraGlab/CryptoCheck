@@ -1,0 +1,31 @@
+.coin-detail-change__table {
+  border-collapse: collapse;
+  font-size: var(--fs-sm);
+  margin-top: var(--space-md);
+  text-align: center;
+  width: 100%;
+}
+
+.coin-detail-change__header-cell {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+  font-weight: var(--fw-medium);
+  padding: var(--space-sm);
+}
+
+.coin-detail-change__body-cell {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  padding: var(--space-sm);
+}
+
+.coin-detail-change__percentage--green {
+  color: var(--green);
+}
+
+.coin-detail-change__percentage--red {
+  color: var(--red);
+}
+
+.coin-detail-change__no-data {
+  font-style: italic;
+  opacity: 0.6;
+}
