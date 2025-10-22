@@ -1,8 +1,8 @@
 import React, { useEffect, Suspense } from "react";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
-const AllCoinsPage = React.lazy(() => import("./pages/AllCoinsPage.jsx"));
-const CoinDetailPage = React.lazy(() => import("./pages/CoinDetailPage.jsx"));
-const HomePage = React.lazy(() => import("./pages/HomePage.jsx"));
+import AllCoinsPage from "./pages/AllCoinsPage.jsx";
+import CoinDetailPage from "./pages/CoinDetailPage.jsx";
+import HomePage from "./pages/HomePage.jsx";
 import Error from "./components/common/Error.jsx";
 import Footer from "./components/layout/Footer.jsx";
 import Header from "./components/layout/Header.jsx";
