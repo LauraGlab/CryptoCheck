@@ -1,0 +1,25 @@
+.coin-detail-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  padding-bottom: var(--space-md);
+  padding-left: var(--space-lg);
+  padding-right: var(--space-lg);
+  padding-top: var(--space-lg);
+}
+
+.coin-detail-header__main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.coin-detail-header__meta {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: var(--space-sm);
+  text-align: center;
+}
+
+.coin-detail-header__note {
+  font-size: var(--fs-sm);
+  letter-spacing: 0.3px;
+}

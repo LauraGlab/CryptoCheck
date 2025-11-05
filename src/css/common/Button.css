@@ -1,0 +1,22 @@
+.button {
+  background-color: var(--accent);
+  border: none;
+  border-radius: var(--radius-lg);
+  color: var(--white);
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 500;
+  margin: var(--space-md) 0;
+  outline: none;
+  overflow: visible;
+  padding: var(--space-sm) var(--space-md);
+  position: relative;
+  text-align: center;
+  transition: transform 0.2s ease;
+  z-index: 0;
+}
+
+.button:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}

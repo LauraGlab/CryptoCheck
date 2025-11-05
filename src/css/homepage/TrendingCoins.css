@@ -1,0 +1,20 @@
+.trending{
+    display: flex;
+    flex-direction: column;
+}
+
+.trending__header{
+    width: 100%;
+}
+
+@media(min-width: 768px){
+    .trending__header{
+        width: 70%;
+    }
+}
+
+@media(min-width: 1024px){
+    .trending__header{
+        width: 50%;
+    }
+}

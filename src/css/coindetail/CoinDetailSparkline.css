@@ -1,0 +1,68 @@
+.coin-detail-sparkline__section {
+  color: var(--text-main);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+}
+
+.coin-detail-sparkline__header {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  justify-content: space-between;
+  padding-left: var(--space-lg);
+}
+
+.coin-detail-sparkline__title h4 {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.3px;
+  margin: 0;
+}
+
+.coin-detail-sparkline__title p {
+  color: #ffffffb3;
+  font-size: var(--fs-sm);
+  margin: 2px 0 0;
+}
+
+.coin-detail-sparkline__trend {
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-sm);
+  letter-spacing: 0.3px;
+  padding: 4px 10px;
+  transition: all 0.3s ease;
+}
+
+.coin-detail-sparkline__trend.up {
+  background: rgba(0, 255, 100, 0.08);
+  color: var(--green);
+}
+
+.coin-detail-sparkline__trend.down {
+  background: rgba(255, 60, 60, 0.08);
+  color: var(--red);
+}
+
+.coin-detail-sparkline__chart {
+  height: 200px;
+  width: 100%;
+}
+
+.coin-detail-sparkline__tooltip {
+  font-size: var(--fs-sm);
+  padding: var(--space-xs) var(--space-sm);
+  text-align: center;
+}
+
+.recharts-cartesian-grid line {
+  transition: opacity 0.3s ease;
+}
+
+.recharts-cartesian-grid line:hover {
+  opacity: 0.4;
+}
+
+

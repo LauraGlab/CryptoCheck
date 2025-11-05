@@ -1,0 +1,142 @@
+.coin-detail-converter__section {
+  background-color: var(--primary);
+  border-radius: var(--radius-lg);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+}
+
+.coin-detail-converter__header {
+  text-align: left;
+}
+
+.coin-detail-converter__title {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
+}
+
+.coin-detail-converter__subtitle {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: var(--fs-sm);
+  margin-top: 4px;
+}
+
+.coin-detail-converter__body {
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.converter__coin {
+  align-items: center;
+  color: var(--white);
+  display: flex;
+  flex-shrink: 0;
+  gap: var(--space-sm);
+  text-transform: uppercase;
+}
+
+.converter__coin img {
+  border-radius: 50%;
+  height: 28px;
+  object-fit: cover;
+  width: 28px;
+}
+
+.converter__icon {
+  align-items: center;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  opacity: 0.75;
+  transition: all 0.3s ease;
+}
+
+.converter__icon:hover {
+  opacity: 1;
+  transform: rotate(180deg);
+}
+
+.converter__icon svg {
+  height: 28px;
+  width: 28px;
+}
+
+.converter__input-card,
+.converter__output-card {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+  display: flex;
+  max-width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  transition: all 0.3s ease;
+}
+
+.converter__input-card {
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+
+.converter__input-card:focus-within {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.converter__input-card input {
+  background: transparent;
+  border: none;
+  color: var(--white);
+  flex: 1;
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-regular);
+  max-width: 200px;
+  min-width: 0;
+  outline: none;
+  overflow: hidden;
+  text-align: right;
+  text-overflow: ellipsis;
+  width: auto;
+}
+
+.converter__input-card input::placeholder {
+  color: var(--white);
+}
+
+.converter__output-card {
+  justify-content: end;
+}
+
+.converter__value {
+  color: var(--white);
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.3px;
+  max-width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .converter__icon {
+    transform: rotate(90deg);
+  }
+
+  .converter__input-card input {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .coin-detail-converter__body {
+    display: grid;
+    grid-template-columns: 40% auto 40%;
+  }
+}
+
+.light .coin-detail-converter__section {
+  background-color: var(--accent);
+}

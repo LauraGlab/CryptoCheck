@@ -1,0 +1,27 @@
+.all-coins__grid{
+  display: grid;
+  gap: var(--space-lg);
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-bottom: calc(50px + var(--space-md));
+}
+
+@media(max-width: 1199px){
+  .all-coins{
+    padding: 0 var(--space-lg);
+  }
+}
+
+@media (min-width: 600px) {
+  .all-coins__grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .all-coins__grid{
+    gap: 1rem; 
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

@@ -1,0 +1,33 @@
+.features__header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.features__icon{
+  height: 35px;
+  width: 25px;
+}
+
+@media(min-width: 768px){
+  .features__subtitle {
+    width: 60%;
+}
+}
+
+@media (min-width: 1024px) {
+  .features__grid-first {
+    display: grid;
+    gap: 1.5rem;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .features__grid-second {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 0.5rem;
+  }
+}

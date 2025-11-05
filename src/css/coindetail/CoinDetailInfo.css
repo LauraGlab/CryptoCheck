@@ -1,0 +1,79 @@
+.coin-detail-info {
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  height: 100%;
+  padding: var(--space-lg);
+}
+
+.coin-detail-info__all-time {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.coin-detail-info__all-time-row {
+  align-items: baseline;
+  display: flex;
+  gap: var(--space-xs);
+}
+
+.coin-detail-info__date {
+  font-size: var(--fs-xs);
+  opacity: 0.6;
+}
+
+.coin-detail-info__line {
+  align-items: flex-start;
+  display: flex;
+  font-size: var(--fs-sm);
+  justify-content: space-between;
+  padding: var(--space-xs) 0;
+}
+
+.coin-detail-info__percentage--green {
+  color: var(--green);
+  font-weight: var(--fw-bold);
+}
+
+.coin-detail-info__percentage--red {
+  color: var(--red);
+  font-weight: var(--fw-bold);
+}
+
+.coin-detail-info__price {
+  font-size: var(--fs-base);
+  font-weight: var(--fw-bold);
+}
+
+.coin-detail-info__title {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: var(--fw-medium);
+}
+
+.coin-detail-info__value {
+  color: var(--text-main);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.3px;
+  text-align: right;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin: var(--space-xs) 0;
+}
+
+.light .coin-detail-info__date {
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.light .coin-detail-info__title {
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.light hr {
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}

@@ -1,0 +1,29 @@
+.stats-section {
+  gap: var(--space-lg);
+  margin-top: var(--space-lg);
+  overflow: hidden;
+  padding: var(--space-lg) 0;
+  width: 100%;
+}
+
+.stats-carousel {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-xl);
+  max-width: 1200px;
+  will-change: transform;
+}
+
+.stat-item {
+  align-items: center;
+  display: flex;
+  min-width: 250px;
+  padding: var(--space-md) var(--space-lg);
+  text-align: center;
+}
+
+.stat-label {
+  display: block;
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-medium);
+}
